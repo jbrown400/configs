@@ -44,6 +44,7 @@ Plugin 'airblade/vim-gitgutter' " Adds diff symbols to the left hand 'gutter'
 Plugin 'tpope/vim-fugitive'     " Branch support for airline
 Plugin 'pangloss/vim-javascript'
 Plugin 'dracula/vim'
+Plugin 'ctrlpvim/ctrlp.vim' " File seraching for vim
 
 
 " My Color Schemes
@@ -73,7 +74,8 @@ filetype plugin indent on    " required
 
 """""""""""""""""""""""""General Configurations""""""""""""""""""""""""""""""""
 
-set clipboard=unnamed
+" Show command as it's being typed
+set showcmd
 
 " Setting side bar numbers
 set number
@@ -135,7 +137,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " Enable nerd tree toggling
 map <C-n> :NERDTreeToggle<CR>
 let g:nerdtree_tabs_open_on_gui_startup     = 1
-let g:nerdtree_tabs_smart_startup_focus     = 1
+" let g:nerdtree_tabs_smart_startup_focus     = 1
 let g:nerdtree_tabs_autoclose               = 1
 let g:nerdtree_tabs_synchronize_view        = 1
 let g:nerdtree_tabs_startup_cd              = 1
