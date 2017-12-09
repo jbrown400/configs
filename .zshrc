@@ -96,6 +96,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 alias v="vim"
 alias ls="ls -G"
+alias python="python3"
 
 # Exports
 export ANDROID_SDK_ROOT='/Users/j0b01an/Library/Android/sdk'
