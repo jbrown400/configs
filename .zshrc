@@ -11,7 +11,7 @@ export ZSH=/Users/justin/.oh-my-zsh
 # DEFAULT_USER="jbro"
 
 # Launch tmux automatically
-# if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
