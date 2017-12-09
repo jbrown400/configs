@@ -72,6 +72,9 @@ filetype plugin indent on    " required
 
 
 """""""""""""""""""""""""General Configurations""""""""""""""""""""""""""""""""
+
+set clipboard=unnamed
+
 " Setting side bar numbers
 set number
 
