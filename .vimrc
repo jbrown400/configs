@@ -143,7 +143,7 @@ let g:nerdtree_tabs_synchronize_view        = 1
 let g:nerdtree_tabs_startup_cd              = 1
 let g:nerdtree_tabs_autofind                = 1
 "let g:nerdtree_tabs_open_on_console_startup = 1
-
+let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeMouseMode=2
 
 
@@ -178,3 +178,8 @@ let g:syntastic_check_on_wq = 0
 """""""""""""""""""""
 set updatetime=250
 let g:gitgutter_max_signs = 500  " default value (keep vim running fast)
+
+
+" CTRLP Config "
+" Show hidden files
+let g:ctrlp_show_hidden = 1
