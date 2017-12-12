@@ -94,7 +94,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias v="vim"
+alias v="nvim"
 alias ls="ls -G"
 alias python="python3"
 

@@ -44,8 +44,7 @@ Plugin 'airblade/vim-gitgutter' " Adds diff symbols to the left hand 'gutter'
 Plugin 'tpope/vim-fugitive'     " Branch support for airline
 Plugin 'pangloss/vim-javascript'
 Plugin 'dracula/vim'
-Plugin 'ctrlpvim/ctrlp.vim' " File seraching for vim
-Plugin 'vim-python/python-syntax' " Python syntax highlighting
+
 
 " My Color Schemes
 Plugin 'tomasr/molokai'
@@ -74,8 +73,7 @@ filetype plugin indent on    " required
 
 """""""""""""""""""""""""General Configurations""""""""""""""""""""""""""""""""
 
-" Show command as it's being typed
-set showcmd
+set clipboard=unnamed
 
 " Setting side bar numbers
 set number
@@ -94,8 +92,6 @@ set t_Co=256
 syntax on
 color dracula
 let g:colors_name = 'dracula'
-
-let g:python_highlight_all = 1
 
 " Searching
 set incsearch  " Displays search matches as you type
@@ -139,13 +135,13 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " Enable nerd tree toggling
 map <C-n> :NERDTreeToggle<CR>
 let g:nerdtree_tabs_open_on_gui_startup     = 1
-" let g:nerdtree_tabs_smart_startup_focus     = 1
+let g:nerdtree_tabs_smart_startup_focus     = 1
 let g:nerdtree_tabs_autoclose               = 1
 let g:nerdtree_tabs_synchronize_view        = 1
 let g:nerdtree_tabs_startup_cd              = 1
 let g:nerdtree_tabs_autofind                = 1
 "let g:nerdtree_tabs_open_on_console_startup = 1
-let NERDTreeShowHidden=1 " Show hidden files
+
 let NERDTreeMouseMode=2
 
 
@@ -180,8 +176,3 @@ let g:syntastic_check_on_wq = 0
 """""""""""""""""""""
 set updatetime=250
 let g:gitgutter_max_signs = 500  " default value (keep vim running fast)
-
-
-" CTRLP Config "
-" Show hidden files
-let g:ctrlp_show_hidden = 1
