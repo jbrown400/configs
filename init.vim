@@ -44,6 +44,9 @@ Plugin 'airblade/vim-gitgutter' " Adds diff symbols to the left hand 'gutter'
 Plugin 'tpope/vim-fugitive'     " Branch support for airline
 Plugin 'pangloss/vim-javascript'
 Plugin 'dracula/vim'
+Plugin 'ctrlpvim/ctrlp.vim' " File seraching for vim
+Plugin 'vim-python/python-syntax' " Python syntax highlighting
+" Plugin 'Townk/vim-autoclose'      " Autoclose brackets and quotes
 
 
 " My Color Schemes
@@ -176,3 +179,8 @@ let g:syntastic_check_on_wq = 0
 """""""""""""""""""""
 set updatetime=250
 let g:gitgutter_max_signs = 500  " default value (keep vim running fast)
+
+
+" Autoclose Config "
+""""""""""""""""""""
+let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}

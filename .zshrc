@@ -99,9 +99,13 @@ alias ls="ls -G"
 alias python="python3"
 
 # Exports
-export ANDROID_SDK_ROOT='/Users/j0b01an/Library/Android/sdk'
-export ANDROID_HOME='/Users/j0b01an/Library/Android/sdk'
+export ANDROID_SDK_ROOT='/Users/justin/Library/Android/sdk'
+export ANDROID_SDK='/Users/justin/Library/Android/sdk'
+export ANDROID_HOME='/Users/justin/Library/Android/sdk'
+export JAVA_HOME='/Library/Java/Home'
 
 # Change color of directories
 LS_COLORS=$LS_COLORS:"di=1;32:"
 export LS_COLORS
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
