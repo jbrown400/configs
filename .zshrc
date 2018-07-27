@@ -62,6 +62,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 plugins=(zsh-syntax-highlighting)
+plugins=(docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,9 +95,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias v="nvim"
+alias v="vim"
 alias ls="ls -G"
-alias python="python3"
 
 # Exports
 export ANDROID_SDK_ROOT='/Users/justin/Library/Android/sdk'
@@ -108,4 +108,4 @@ export JAVA_HOME='/Library/Java/Home'
 LS_COLORS=$LS_COLORS:"di=1;32:"
 export LS_COLORS
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
