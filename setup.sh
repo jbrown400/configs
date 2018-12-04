@@ -2,10 +2,19 @@
 
 # Run this file to install all tools, plugins, etc.
 
-echo "Before we start, has this computer been connected to Justin's GitHub?"
+echo "Before we start, has this computer been connected to Justin's GitHub? [y/n]"
 ### get user input
+read answer
 
+if [[ "$answer" != "y" ]]; then
+    echo "Don't run the rest of the script"
+    exit 0
+else
+    echo "Run the rest of the script"
+    exit 0
+fi
 
+"""
 # ensure script is run from home directory
 cd
 
@@ -38,9 +47,6 @@ echo "Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
-
-
-
-
 # Cmake
 brew install cmake
+"""
