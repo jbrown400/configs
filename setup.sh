@@ -52,14 +52,19 @@ git clone git@github.com:jbrown400/configs.git configs/
 
 echo "Copying configs to home directory"
 if [[ -a ~/.vimrc ]]; then
-    cp configs/.vimrc ~/.vimrc
+    rm ~/.vimrc
 fi
+cp configs/.vimrc ~/.vimrc
+
 if [[ -a ~/.zshrc ]]; then
-    cp configs/.zshrc ~/.zshrc
+    rm ~/.zshrc
 fi
-if [[ -a ~/.zshrc ]]; then
-    cp configs/.tmux.conf ~/.tmux.conf
+cp configs/.zshrc ~/.zshrc
+
+if [[ -a ~/.tmux.conf ]]; then
+    rm ~/.tmux.conf
 fi
+cp configs/.tmux.conf ~/.tmux.conf
 
 
 
