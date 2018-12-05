@@ -7,14 +7,14 @@ echo "Before we start, has this computer been connected to Justin's GitHub? [y/n
 read answer
 
 if [[ "$answer" != "y" ]]; then
-    echo "Don't run the rest of the script"
+    echo "Exiting. Please connect to Justin's GitHub."
     exit 0
 else
     echo "Run the rest of the script"
     exit 0
 fi
 
-"""
+
 # ensure script is run from home directory
 cd
 
@@ -46,7 +46,22 @@ rm -rf fonts
 echo "Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+echo "Grabbing configs"
+mkdir configs
+git clone git@github.com:jbrown400/configs.git configs/
+
+echo "Copying configs to home directory"
+if [[ -a ~/.vimrc ]]; then
+    cp configs/.vimrc ~/.vimrc
+fi
+if [[ -a ~/.zshrc ]]; then
+    cp configs/.zshrc ~/.zshrc
+fi
+if [[ -a ~/.zshrc ]]; then
+    cp configs/.tmux.conf ~/.tmux.conf
+fi
+
+
 
 # Cmake
 brew install cmake
-"""
