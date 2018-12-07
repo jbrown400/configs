@@ -72,5 +72,11 @@ if [[ -a ~/.tmux.conf ]]; then
 fi
 cp configs/.tmux.conf ~/.tmux.conf
 
+if [[ -a ~/.oh-my-zsh/themes/agnoster.zsh-theme ]]; then
+    rm ~/.oh-my-zsh/themes/agnoster.zsh-theme
+fi
+cp configs/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
+
+
 
 
