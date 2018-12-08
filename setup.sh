@@ -10,7 +10,7 @@ if [[ "$answer" != "y" ]]; then
     echo "Exiting. Please connect to Justin's GitHub."
     exit 0
 else
-    echo "Run the rest of the script"
+    echo "Runing the rest of the script"
     exit 0
 fi
 
