@@ -11,7 +11,6 @@ if [[ "$answer" != "y" ]]; then
     exit 0
 else
     echo "Runing the rest of the script"
-    exit 0
 fi
 
 
