@@ -20,6 +20,10 @@ cd
 echo "Installing brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Installing java"
+brew tap caskroom/versions
+brew cask install java8
+
 echo "Installing tmux"
 brew install tmux
 
