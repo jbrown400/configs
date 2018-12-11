@@ -42,6 +42,9 @@ brew install cmake
 echo "Installing adb tools"
 brew cask install android-platform-tools
 
+echo "Installing Android Studio"
+brew cask install android-studio
+
 echo "Installing zsh-syntax-highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
